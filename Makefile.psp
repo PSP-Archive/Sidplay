@@ -1,0 +1,23 @@
+PSPSDK                 = $(shell psp-config --pspsdk-path)
+PSPDIR                 = $(shell psp-config --psp-prefix)
+
+INCDIR                 := audio/psp $(PSPDIR)/include 
+CFLAGS                 = -G0 -Wall -O2 -Wno-deprecated -fno-strict-aliasing
+LIBS                   = -lsidplay -lstdc++ -lm  -lpspaudiolib -lpspaudio 
+
+OBJS                   = pspsidplay.o audio/psp/audiodrv.o
+
+TARGET                 = sidplay
+EXTRA_TARGETS          = EBOOT.PBP
+PSP_EBOOT_TITLE        = sidplay
+EXTRA_CLEAN            = clean_kxploit
+
+include $(PSPSDK)/lib/build.mak
+
+clean_kxploit:
+	rm -rf $(TARGET)
+	rm -rf "$(TARGET)%"
+
+strip:
+	cp $(TARGET).elf sid.elf
+	psp-strip sid.elf

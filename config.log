@@ -1,0 +1,41 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:562: checking for a BSD compatible install
+configure:615: checking whether build environment is sane
+configure:672: checking whether make sets ${MAKE}
+configure:718: checking for working aclocal
+configure:731: checking for working autoconf
+configure:744: checking for working automake
+configure:757: checking for working autoheader
+configure:770: checking for working makeinfo
+configure:791: checking host system type
+configure:817: checking for c++
+configure:849: checking whether the C++ compiler (c++  ) works
+configure:865: c++ -o conftest    conftest.C  1>&5
+configure:891: checking whether the C++ compiler (c++  ) is a cross-compiler
+configure:896: checking whether we are using GNU C++
+configure:924: checking whether c++ accepts -g
+configure:973: cc -c   conftest.c 1>&5
+configure:990: cc -c   conftest.c 1>&5
+configure: In function 'main':
+configure:986: warning: incompatible implicit declaration of built-in function 'exit'
+configure:1016: checking for working SIDPLAY library and headers
+configure:1232: checking how to run the C++ preprocessor
+configure:1275: checking for ANSI C header files
+configure:1382: checking for signal.h
+configure:1382: checking for iostream.h
+configure:1382: checking for iomanip.h
+configure:1424: checking for sys/ioctl.h
+configure:1424: checking for linux/soundcard.h
+configure:1424: checking for machine/soundcard.h
+configure:1424: checking for soundcard.h
+configure:1424: checking for sys/audio.h
+configure:1424: checking for sun/audioio.h
+configure:1424: checking for sun/dbriio.h
+configure:1424: checking for sys/audioio.h
+configure:1424: checking for audio.h
+configure:1424: checking for dmedia/audio.h
+configure:1464: checking for cp
+configure:1499: checking for main in -lossaudio
+configure:1536: checking which audio driver to install

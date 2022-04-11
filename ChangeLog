@@ -1,0 +1,19 @@
+* Sat Sep 28 2002 Michael Schwendt
+- Added NetBSD port changes. (Garph)
+- Added libossaudio on Net/OpenBSD. (reported by Christian Weisgerber)
+- Make OSS audio driver choose different format if required.
+
+* Mon Mar 11 2002 Michael Schwendt
+- Merged sidplay option -t patch.
+- Fixed big-endian bug in sid2wav. (Axel Wefers)
+
+* Tue Feb 19 2002 Michael Schwendt
+- Include <string.h> for compatibility with libsidplay-1.36.51
+  compiled with old non-standard <strstream.h>.
+
+* Fri Dec 28 2001 Michael Schwendt
+- Don't use non-standard strnicmp anymore.
+
+* Mon Nov 19 2001 Michael Schwendt
+- Made compatible with libstdc++3 and GCC3.
+
